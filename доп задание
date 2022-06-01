@@ -1,0 +1,19 @@
+#include <iostream>
+using namespace std;
+class Book{
+	public:
+		int Pages, Bookmark;
+		Book(int p){
+			Pages=p;
+		}
+		void PutBookmark(int N){
+			if(N>Pages) cout<<"Number of pages is smaller than bookmark"<<endl;
+			else Bookmark=N;
+		}
+};
+int main(){
+	Book b(100);
+	b.PutBookmark(10);
+	b.PutBookmark(120);
+	return 0;
+}
